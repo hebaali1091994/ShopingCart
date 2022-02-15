@@ -1,6 +1,6 @@
 import React from "react";
 import "../../css/Filter/Filter.css";
-export default function Filter() {
+export default function Filter(props) {
   return (
     <div className="filter-wrapper">
       <h2 className="filter-title">Filter</h2>
@@ -8,23 +8,23 @@ export default function Filter() {
       <div className="filter-by-size">
         <span>Filter</span>
 
-        <select className="filter-select">
-          <option value="All">All</option>
-          <option value="XS">Xs</option>
+        <select  value={props.size} className="filter-select" onChange={props.handleFilterSize}>
+          <option value="ALL">ALL</option>
+          <option value="XS">XS</option>
           <option value="S">S</option>
           <option value="M">M</option>
           <option value="L">L</option>
-          <option value="Xl">Xl</option>
-          <option value="Xxl">Xxl</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
         </select>
       </div>
-      <div className="filter-by-size">
+      <div   value={props.order}  className="filter-by-size" onChange={props.handleFilterOrder}>
         <span>Order</span>
 
         <select className="filter-select">
-          <option value="latest">latest</option>
-          <option value="Lower">Lower</option>
-          <option value="Heighest">Heighest</option>
+          <option value="latest">Latest</option>
+          <option value="Lowest">Lowest</option>
+          <option value="Highest">Highest</option>
          
         </select>
       </div>

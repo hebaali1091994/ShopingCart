@@ -4,7 +4,7 @@
     "title": "product1",
     "imgUrl": "../img/jj.jpg",
     "desc": "this is the product 1",
-    "size": ["s", "m"],
+    "size": ["S", "M"],
     "price": 30
   },
   {
@@ -12,7 +12,7 @@
     "title": "product2",
     "imgUrl": "../img/k.png",
     "desc": "this is the product 2",
-    "size": ["s", "m"],
+    "size": ["L", "XL"],
     "price": 15
   },
   {
@@ -20,7 +20,7 @@
     "title": "product3",
     "imgUrl": "../img/l.jfif",
     "desc": "this is the product 3",
-    "size": ["s", "m"],
+    "size": ["S", "XS"],
     "price": 40
   },
   {
@@ -28,7 +28,7 @@
     "title": "product4",
     "imgUrl": "../img/s.jpeg",
     "desc": "this is the product 4",
-    "size": ["s", "m"],
+    "size": ["XL", "XXL"],
     "price": 20
   },
   {
@@ -36,7 +36,7 @@
     "title": "product5",
     "imgUrl": "../img/s1.jpg",
     "desc": "this is the product 5",
-    "size": ["s", "m"],
+    "size": ["XL", "M"],
     "price": 10
   },
   {
@@ -44,7 +44,7 @@
     "title": "product6",
     "imgUrl": "../img/s.jpeg",
     "desc": "this is the product 6",
-    "size": ["s", "m"],
+    "size": ["S", "M"],
     "price": 25
   }
 ]
