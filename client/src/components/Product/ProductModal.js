@@ -1,6 +1,6 @@
 import React from 'react'
 import Modal from "react-modal"
-export default function ProductModel(props) {
+export default function ProductModal(props) {
     const{product,closeModal}=props
   return (
     <Modal isOpen={product} onRequestClose={closeModal}>

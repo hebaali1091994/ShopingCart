@@ -1,0 +1,26 @@
+.filter-wrapper {
+  border: 1px solid #c0c0c0;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+}
+.filter-wrapper .filter-title {
+  background-color: #2a5ea2;
+  color: white;
+  margin-bottom: 20px;
+  padding: 10ox;
+}
+.filter-wrapper > div {
+  padding: 5px 15px;
+  margin-bottom: 13px;
+}
+.filter-wrapper select {
+  display: block;
+  height: 40px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.filter-wrapper .number-of-products {
+  font-size: 15px;
+}
