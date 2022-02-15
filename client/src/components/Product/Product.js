@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../css/Product/Product.css";
-import Modal from "react-modal";
+import ProductModal from "./ProductModal";
 export default function Product(props) {
   const [product, setProduct] = useState("");
   const openModal = (product) => {
@@ -23,7 +23,7 @@ export default function Product(props) {
           <button>Add To Cart</button>
         </div>
       ))}
-      <Modal isOpen={product} onRequestClose={closeModal}>
+      {/* <Modal isOpen={product} onRequestClose={closeModal}>
         <span className="spanModal" onClick={closeModal}>
           &times;
         </span>
@@ -34,7 +34,8 @@ export default function Product(props) {
 
           <p>{product.price}$</p>
         </div>
-      </Modal>
+      </Modal> */}
+      <ProductModal product={product} closeModal={closeModal}/>
       
     </div>
   );

@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import data from "../src/data.json"
 import { useState } from "react";
 import Product from "./components/Product/Product";
+import Filter from "./components/Filter/Filter";
 
 function App() {
   const [products,setProducts]=useState(data)
@@ -16,7 +17,9 @@ function App() {
 
           <div className="wrapper">
           <Product products={products}/>
-            <div className="fliter">Filter</div>
+          
+              <Filter/>
+         
           </div>
 
         </main>
