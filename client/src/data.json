@@ -2,7 +2,7 @@
   {
     "id": "id1",
     "title": "product1",
-    "imgUrl": "",
+    "imgUrl": "../img/jj.jpg",
     "desc": "this is the product 1",
     "size": ["s", "m"],
     "price": 30
@@ -10,7 +10,7 @@
   {
     "id": "id2",
     "title": "product2",
-    "imgUrl": "",
+    "imgUrl": "../img/k.png",
     "desc": "this is the product 2",
     "size": ["s", "m"],
     "price": 15
@@ -18,7 +18,7 @@
   {
     "id": "id3",
     "title": "product3",
-    "imgUrl": "",
+    "imgUrl": "../img/l.jfif",
     "desc": "this is the product 3",
     "size": ["s", "m"],
     "price": 40
@@ -26,7 +26,7 @@
   {
     "id": "id4",
     "title": "product4",
-    "imgUrl": "",
+    "imgUrl": "../img/s.jpeg",
     "desc": "this is the product 4",
     "size": ["s", "m"],
     "price": 20
@@ -34,7 +34,7 @@
   {
     "id": "id5",
     "title": "product5",
-    "imgUrl": "",
+    "imgUrl": "../img/s1.jpg",
     "desc": "this is the product 5",
     "size": ["s", "m"],
     "price": 10
@@ -42,7 +42,7 @@
   {
     "id": "id6",
     "title": "product6",
-    "imgUrl": "",
+    "imgUrl": "../img/s.jpeg",
     "desc": "this is the product 6",
     "size": ["s", "m"],
     "price": 25

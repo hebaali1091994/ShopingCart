@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .product-item {
+  width: 15%;
+}
+.wrapper img {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+.wrapper .producr-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.wrapper button {
+  display: block;
+  background-color: #2a5ea5;
+  border: 0;
+  align-items: center;
+  color: white;
+  padding: 7px;
+  width: 100%;
+  border-radius: 6px;
+}

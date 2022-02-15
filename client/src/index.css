@@ -21,3 +21,14 @@ main {
   grid-area: main;
 }
 
+.wrapper{
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .products{
+  width: 70%;
+}
+.wrapper .fliter{
+  width: 30%;
+}
