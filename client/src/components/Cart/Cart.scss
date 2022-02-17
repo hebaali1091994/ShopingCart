@@ -1,0 +1,32 @@
+.cart-wrapper {
+  width: 70%;
+  margin: 20px auto;
+}
+.cart-title {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #333;
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 3px 3px 2px #ccc;
+  margin: 6px 0;
+  img {
+    width: 80px;
+  }
+  .cart-info {
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+  }
+  button {
+    display:inline-block;
+    background-color: #2a5ea5;
+    border: 0;
+    align-items: center;
+    color: white;
+  padding: 7px;
+    border-radius: 6px;}
+}
