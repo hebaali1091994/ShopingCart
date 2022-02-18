@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../../css/Cart/Cart.css";
 import Checkout from "../CheckoutForm/Checkout";
+import Bounce from "react-reveal/Bounce"
+
 export default function Cart(props) {
   const [showForm, setShowForm] = useState(false);
   const [value, setValue] = useState("");
@@ -29,6 +31,7 @@ export default function Cart(props) {
           <p>there is {props.cartItem.length}in cart</p>
         )}{" "}
       </div>
+      <Bounce bottom cascade>
       <div className="cart-items">
         {props.cartItem.map((item) => (
           <div className="cart-item" key={item.id}>
@@ -43,7 +46,7 @@ export default function Cart(props) {
             </button>
           </div>
         ))}
-      </div>
+      </div></Bounce>
       {props.cartItem.length !== 0 && (
         <div className="cart-footer">
           <div className="total">
