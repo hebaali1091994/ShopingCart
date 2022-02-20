@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "../../css/Cart/Cart.css";
 import Checkout from "../CheckoutForm/Checkout";
 import Bounce from "react-reveal/Bounce"
-
 export default function Cart(props) {
   const [showForm, setShowForm] = useState(false);
   const [value, setValue] = useState("");

@@ -6,7 +6,8 @@ import { useEffect, useState } from "react";
 import Product from "./components/Product/Product";
 import Filter from "./components/Filter/Filter";
 import Cart from "./components/Cart/Cart";
-
+import {Provider} from 'react-redux'
+import store from "./components/Store/Store";
 function App() {
   const [products, setProducts] = useState(data);
   const [order, setOrder] = useState("");
@@ -63,6 +64,7 @@ useEffect(()=>{
   localStorage.setItem('cartItem',JSON.stringify(cartItem))
 },[cartItem])
   return (
+    <Provider store={store}>
     <div className="layout">
       <Header />
       <main>
@@ -83,6 +85,7 @@ useEffect(()=>{
       </main>
       <Footer />
     </div>
+    </Provider>
   );
 }
 
