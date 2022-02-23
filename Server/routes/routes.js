@@ -3,7 +3,7 @@ const express=require('express')
 const product=require('../models/productModel')
 const router=express.Router()
 router.get("/api/products", async (req, res) => {
-    const Products = await  Product.find();
+    const Products = await  product.find();
     res.send(Products);
   });
   router.post("/api/products", async (req, res) => {
@@ -12,7 +12,7 @@ router.get("/api/products", async (req, res) => {
     res.send(saveProducts);
   });
   router.delete("/api/products/:id", async (req, res) => {
-    const delteProduct = await Product.findByIdAndDelete(req.params.id);
+    const delteProduct = await product.findByIdAndDelete(req.params.id);
     res.send(delteProduct);
   });
   module.exports=router
