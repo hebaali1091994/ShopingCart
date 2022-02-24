@@ -15,13 +15,13 @@ function App() {
   const[cartItem,setCartItem]=useState(JSON.parse(localStorage.getItem('cartItem'))||[])
   const handleFilterSize = (e) => {
     setzsize(e.target.value);
-    if (e.target.value == "ALL") {
+    if (e.target.value === "ALL") {
       setProducts(data);
     } else {
       let newProducts = [...products];
       let ProductSet = newProducts.filter(
-        (p) => p.size.indexOf(e.target.value) != -1
-      );
+        (p) => p.size.indexOf(e.target.value) !== -1
+      ); 
       setProducts(ProductSet);
     }
   };
@@ -30,9 +30,9 @@ function App() {
     setOrder(porder);
     let newProducts = [...products];
     let ProductSet = newProducts.sort(function (a, b) {
-      if (porder =="Lowest") {
+      if (porder ==="Lowest") {
         return a.price - b.price;
-      } else if (porder == "Highest") {
+      } else if (porder === "Highest") {
         return b.price - a.price;
       } else {
         return a.id < b.id ? 1 : -1;
@@ -44,7 +44,7 @@ const addToCart=(product)=>{
   const newProducts=[...cartItem]
   var isProductExist=false
   newProducts.forEach(p=>{
-    if(p.id==product.id){
+    if(p.id===product.id){
       p.quntity++
       isProductExist= true
     }
