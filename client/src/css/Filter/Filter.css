@@ -1,7 +1,7 @@
 .filter-wrapper {
   border: 1px solid #c0c0c0;
   display: flex;
-  background-color: white;
+  background-color: #af7f7f;
   flex-direction: column;
 }
 .filter-wrapper .filter-title {
