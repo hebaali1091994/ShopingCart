@@ -60,9 +60,9 @@ const remveProductfrmCart=(product)=>{
   setCartItem(newProducts.filter(p=>p.id!==product.id))
   
 }
-useEffect(()=>{
-  localStorage.setItem('cartItem',JSON.stringify(cartItem))
-},[cartItem])
+// useEffect(()=>{
+//   localStorage.setItem('cartItem',JSON.stringify(cartItem))
+// },[cartItem])
   return (
     <Provider store={store}>
     <div className="layout">
